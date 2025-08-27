@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.example.nativeonly" // ✅ Bắt buộc từ AGP 8.0+
+
     compileSdkVersion 33
 
     defaultConfig {
@@ -15,7 +17,7 @@ android {
 
     externalNativeBuild {
         ndkBuild {
-            path "src/main/jni/Android.mk" // ✅ Đặt ở đây, không trong defaultConfig
+            path "src/main/jni/Android.mk"
         }
     }
 
