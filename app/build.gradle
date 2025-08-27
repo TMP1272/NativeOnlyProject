@@ -4,6 +4,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
+        applicationId "com.example.nativeonly"
         minSdkVersion 21
         targetSdkVersion 33
 
@@ -15,6 +16,13 @@ android {
             ndkBuild {
                 path "src/main/jni/Android.mk"
             }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
         }
     }
 
