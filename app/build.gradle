@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.example.nativeonly" // ✅ Bắt buộc từ AGP 8.0+
+    namespace = "com.example.nativeonly" // ✅ Bắt buộc từ AGP 8.0+
 
     compileSdkVersion 33
 
