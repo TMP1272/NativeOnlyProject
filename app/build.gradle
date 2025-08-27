@@ -7,20 +7,20 @@ android {
         minSdkVersion 21
         targetSdkVersion 33
 
-        externalNativeBuild {
-            ndkBuild {
-                path "src/main/jni/Android.mk"
-            }
-        }
-
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+
+        externalNativeBuild {
+            ndkBuild {
+                path file("src/main/jni/Android.mk")
+            }
         }
     }
 
     externalNativeBuild {
         ndkBuild {
-            path "src/main/jni/Android.mk"
+            // Không cần path ở đây
         }
     }
 }
