@@ -4,8 +4,8 @@ LOCAL_PATH := $(call my-dir)
 # firebaseconfig
 # ====================
 include $(CLEAR_VARS)
-LOCAL_MODULE        := firebase_native
-LOCAL_SRC_FILES     := firebase_native.cpp
+LOCAL_MODULE        := firebase_api
+LOCAL_SRC_FILES     := firebase_api.cpp
 
 LOCAL_STRIP_MODULE  := true
 LOCAL_CFLAGS        += -O3 -flto -ffunction-sections -fdata-sections -fvisibility-inlines-hidden
