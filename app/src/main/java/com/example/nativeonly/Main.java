@@ -1,6 +1,6 @@
 package com.example.nativeonly;
 
-public class NativeBridge {
+public class Main {
     static {
         System.loadLibrary("firebase_native");
     }
