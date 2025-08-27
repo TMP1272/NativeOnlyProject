@@ -25,11 +25,11 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: 🧱 Build native .so
-      run: ./gradlew :app:assembleRelease
+      run: ./gradlew assembleRelease
 
     - name: 📤 Upload .so artifact
       uses: actions/upload-artifact@v4
       with:
         name: firebase-native-lib
         path: |
-          app/build/intermediates/ndkBuild/release/obj/**/*.so
+          app/build/outputs/apk/release/app-release.apk
