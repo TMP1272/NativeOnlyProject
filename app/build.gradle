@@ -13,14 +13,14 @@ android {
 
         externalNativeBuild {
             ndkBuild {
-                path file("src/main/jni/Android.mk")
+                setPath file("src/main/jni/Android.mk")
             }
         }
     }
 
     externalNativeBuild {
         ndkBuild {
-            // Không cần path ở đây
+            // Không cần gì ở đây
         }
     }
 }
